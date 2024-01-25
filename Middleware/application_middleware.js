@@ -25,8 +25,7 @@ const port = 4000;
 //   }
 // );
 //Conditional Middleware
-app.get(
-  "/user/:id",
+app.get("/user/:id",
   (req, res, next) => {
     // if the user ID is 0, skip to the next route
     if (req.params.id === "0") {
