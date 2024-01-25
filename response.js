@@ -2,11 +2,11 @@ const express = require("express");
 const app = express();
 const port = 4000;
 app.get("/", (req, res) => {
-  // res.json({ user: 'Nitya' });
+   res.json({ user: 'Nitya' });
   //res.redirect("/redirect");
   //res.end("Now Ending..");
   //res.render('index'); //Use with EJS
-  // res.send("Sending");
+  res.send("Sending");
 });
 app.get("/redirect", (req, res) => {
   res.send("Redirected");
